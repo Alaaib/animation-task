@@ -1,0 +1,42 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{background-image: url(../images/IMG_6463.JPG); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;}
+.overlay{width: 100%; height: 100%; position: absolute; opacity: 0.6;}
+.top{width: 200px; height:70px; position: relative;  margin: auto; border-radius: 50px; }
+.button{width: 65px ; height: 65px; border-radius: 50%; position: absolute; margin-top: 2.5px;}
+.div1, .div2, .div3, .div4, .div5, .div6{ width: 100px; height: 100px; border-radius: 10px; position: absolute; border: 2px solid rgba(109, 2, 2, 0.795);}
+.div1{top:70px; animation:  change 4s linear 1.75s alternate both; border-color: rgb(100, 175, 1) ;}
+.div3{top: 270; animation: change 4s linear 9.75s alternate both;border-color: rgb(100, 175, 1)}
+.div5{top: 470; animation: change 4s linear 17.75s alternate both;border-color: rgb(100, 175, 1)}
+.div2{top: 170; animation: change 4s linear 5.75s reverse both;}
+.div4{top: 370; animation: change 4s linear 13.75s reverse both;}
+.div6{top:570; animation: change 4s linear 21.75s reverse both;}
+.overlay{animation: change3 4s 6 1.75s alternate both;}
+@keyframes change{
+    0%{ left: 10%; background-color: rgb(248, 148, 141);}
+    25%{ left: 25%; background-color: rgb(100, 175, 1);}
+    75%{ left: 75%; background-color:  rgb(250, 233, 78);}
+    100%{ left:80%; background-color:  aliceblue;}
+}
+.button{animation:  change2 0.75s linear 1s alternate both;}
+.top{ animation:  change3 0.75s linear 1s alternate both;}
+ @keyframes change2{
+    0%{ left: 0; background:-webkit-radial-gradient(90% 90% ,circle , rgb(5, 0, 27) , rgb(151, 4, 209), rgb(147, 194, 255)); }
+    50%{background: -webkit-radial-gradient(10% 10% ,circle , rgb(184, 250, 250) , rgb(250, 194, 194), rgb(247, 250, 92));}
+    100%{ left: 135px; background: -webkit-radial-gradient(10% 10% ,circle , rgb(184, 250, 250) , rgb(250, 194, 194), rgb(247, 250, 92));}
+    }
+    @keyframes change3{
+        0%{ background-color: rgb(248, 148, 141);}
+    25%{ background-color: rgb(100, 175, 1);}
+    75%{  background-color:  rgb(250, 233, 78);}
+    100%{  background-color:  aliceblue;}
+        }  
+span{line-height: 70px; font-size: x-large; font-weight: bolder; position: absolute; z-index: 2;
+     background-color:rgba(165, 42, 42, 0.897);border-radius: 5px; animation: change4 0.5s infinite linear  reverse forwards}
+    .spring{left: 10%; color:  rgb(248, 148, 141);}
+    .autumn{left: 35%; color:  rgb(100, 175, 1);}
+    .summer{left:  60%; color:  rgb(250, 233, 78);}
+    .winter{left: 80%; color:  aliceblue;}
+ @keyframes change4{
+     0%{transform: scale(1,1);}
+    100%{ transform: scale(1.25,1.25);}
+ }  
